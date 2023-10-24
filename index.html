@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Cartão de Pokemon</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <!-- Comfortaa - Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Reset de estilos -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <!-- Meus arquivos-fonte -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <main>
+    <div id="card">
+      <div id="card__loader" class="card__loader--hidden"></div>
+      <div id="card__info" class="card__info--hidden">
+        <h3 id="card__hp">HP <span id="card__hp__value"></span></h3>
+        <img src="" id="card__image" />
+        <h2 id="card__name"></h2>
+        <div id="card__types"></div>
+        <div id="card__stats">
+          <div id="card__attack">
+            <span id="card__attack__value"></span>
+            <h3 id="card__attack__description">Ataque</h3>
+          </div>
+          <div id="card__defense">
+            <span id="card__defense__value"></span>
+            <h3 id="card__defense__description">Defesa</h3>
+          </div>
+          <div id="card__speed">
+            <span id="card__speed__value"></span>
+            <h3 id="card__speed__description">Velocidade</h3>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="card__generate-button">Gerar</button>
+    </div>
+  </main>
+</body>
+</html>

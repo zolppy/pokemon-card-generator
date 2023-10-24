@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+  --soft-black: #333;
+  --soft-blue: #66f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, skyblue, white);
+  color: var(--soft-black);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 2px 7px 20px rgba(0, 0, 0, .5);
+  padding: 15px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card__loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#card__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card__hp {
+  background-color: white;
+  border-radius: 30px;
+  margin-left: auto;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  padding: 8px 0;
+  width: 70px;
+  text-align: center;
+}
+
+#card__image {
+  display: block;
+  height: 150px;
+  position: relative;
+  margin: 20px auto;
+}
+
+#card__name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#card__types {
+  width: 70%;
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#card__types span {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+#card__stats {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#card__stats h3 {
+  color: #999;
+}
+
+#card__generate-button {
+  background-color: var(--soft-blue);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 9px;
+  width: 95%;
+}
+
+#card__generate-button:hover {
+  cursor: pointer;
+  transform: scale(.95);
+}
+
+#card__generate-button:active {
+  transform: scale(1);
+}
+
+*[class*="hidden"] {
+  display: none !important;
+}
